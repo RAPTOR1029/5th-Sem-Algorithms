@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 void qs(int a[],int l,int r);
 int ps(int a[],int l, int r);
 swap(int* a,int* b)
@@ -12,9 +12,10 @@ swap(int* a,int* b)
 int main()
 {
 	int n,i;
-	int a[100];
+	int *a;
 	printf("Enter the size of array:");
 	scanf("%d", &n);
+	a=malloc(sizeof(int)*n);
 	printf("\nEnter the elements of array:\n");
 	for(i=0;i<n;i++)
 	{
