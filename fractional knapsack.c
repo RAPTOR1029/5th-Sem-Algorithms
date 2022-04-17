@@ -44,7 +44,7 @@ void ks(float *w,float *v,float mv,int n)
 		printf("\nProduct of weight %fkg is selected compeletely",w[i]);
 		printf("\nTotal Profit selected=%f",cp);
 	}
-	else if(w[i]>tw!=0)
+	else if(w[i]>tw && tw!=0)
 	{
 		pp=(tw/w[i])*100;
 		p=p+((pp/100)*v[i]);
